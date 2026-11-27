@@ -6,7 +6,7 @@
 const CONFIG = {
     usuario: "Kamilla",
     senha: "foguin",
-    seuNome: "Kamilla"
+    seuNome: "Cristian"
 };
 
 
