@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma pergunta especial </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="login" class="tela ativa">
+        <div class="cartao">
+            <div class="coracao">❤️</div>
+            <h1>Tenho algo para você...</h1>
+            <p>Mas primeiro, preciso saber quem está tentando entrar.</p>
+
+            <input type="text" id="usuario" placeholder="Seu nome">
+            <input type="password" id="senha" placeholder="Senha">
+
+            <button onclick="entrar()">Entrar</button>
+            <p id="erro" class="erro"></p>
+        </div>
+    </section>
+
+
+    <section id="pedido" class="tela">
+        <div class="cartao">
+            <div class="coracao">💗</div>
+
+            <h1>Tenho uma pergunta...</h1>
+
+            <p class="mensagem">
+                Desde que você apareceu na minha vida,
+                tudo ficou um pouco mais especial.
+
+                Quero continuar criando momentos,
+                compartilhando sorrisos e vivendo
+                novas histórias ao seu lado.
+
+                Então, preciso te perguntar...
+            </p>
+
+            <h2>Você aceita namorar comigo?</h2>
+
+            <div class="botoes">
+                <button id="sim" onclick="aceitar()">
+                    SIM! ❤️
+                </button>
+
+                <button id="nao" type="button">
+                    Não 😢
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contrato" class="tela">
+        <div class="documento">
+
+            <h1>CONTRATO DE NAMORO</h1>
+            <p class="subtitulo">Documento oficial do nosso amor ❤️</p>
+
+            <hr>
+
+            <p>
+                Pelo presente documento, as partes abaixo
+                identificadas declaram, de livre e espontânea
+                vontade, o início de um relacionamento.
+            </p>
+
+            <p><strong>CONTRATANTE:</strong></p>
+            <p id="nomeContrato"></p>
+
+            <p><strong>CONTRATADO(A):</strong></p>
+            <input type="text" id="nomePessoa" placeholder="Nome completo">
+
+            <h3>CLÁUSULA 1 — DO AMOR</h3>
+            <p>
+                Ambas as partes comprometem-se a cultivar
+                carinho, respeito, companheirismo e amor.
+            </p>
+
+            <h3>CLÁUSULA 2 — DOS MOMENTOS</h3>
+            <p>
+                Ficam oficialmente autorizados abraços,
+                beijos, encontros, risadas e momentos
+                inesquecíveis.
+            </p>
+
+            <h3>CLÁUSULA 3 — DA LEALDADE</h3>
+            <p>
+                As partes comprometem-se a manter diálogo,
+                confiança, sinceridade e respeito mútuo.
+            </p>
+
+            <h3>CLÁUSULA 4 — DA VALIDADE</h3>
+            <p>
+                Este contrato entra em vigor a partir
+                da assinatura de ambas as partes,
+                com validade por tempo indeterminado.
+            </p>
+
+            <hr>
+
+            <p><strong>Data:</strong> <span id="data"></span></p>
+
+            <h3>ASSINATURA DIGITAL</h3>
+            <p>Assine abaixo para oficializar nosso namoro:</p>
+
+            <canvas id="assinatura"></canvas>
+
+            <div class="botoes">
+                <button onclick="limparAssinatura()" class="secundario">
+                    Limpar assinatura
+                </button>
+
+                <button onclick="finalizar()">
+                    Assinar contrato ❤️
+                </button>
+            </div>
+
+            <p id="aviso" class="erro"></p>
+
+            <div id="finalizacao" class="finalizacao">
+                <h2>❤️ NAMORO OFICIALIZADO! ❤️</h2>
+                <p>Que esse seja o começo de uma linda história.</p>
+
+                <button onclick="window.print()">
+                    Salvar contrato em PDF
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
